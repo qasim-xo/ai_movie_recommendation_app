@@ -50,22 +50,6 @@ This project follows the **MVVM (Model-View-ViewModel)** architecture:
 ![image](https://github.com/user-attachments/assets/7d7dfd30-e4f7-4395-bcaf-9e93f1d3449c)
 
 
-## 📦 Installation
-
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/your-username/movie-recommendation-chat-app.git
-   cd movie-recommendation-chat-app
-   ```
-2. **Install dependencies:**
-   ```sh
-   flutter pub get
-   ```
-3. **Run the app:**
-   ```sh
-   flutter run
-   ```
-
 ## 📜 Usage
 
 1. Open the app and start a conversation.
