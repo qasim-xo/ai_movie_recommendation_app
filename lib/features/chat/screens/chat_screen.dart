@@ -1,4 +1,4 @@
-import 'package:ai_movie_recommendation_app/features/home/providers/chat_provider.dart';
+import 'package:ai_movie_recommendation_app/features/chat/providers/chat_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

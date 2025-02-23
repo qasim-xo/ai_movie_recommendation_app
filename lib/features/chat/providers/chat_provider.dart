@@ -29,8 +29,6 @@ class ChatNotifier extends Notifier<ChatState> {
   void addMessage(String textMsg) async {
     state = state.copyWith(isTyping: true);
 
-    String originalText = textMsg;
-
     final part = Part(text: textMsg);
     final chatModel = Content(parts: [part], role: 'user');
 

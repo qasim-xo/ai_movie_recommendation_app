@@ -1,4 +1,4 @@
-import 'package:ai_movie_recommendation_app/features/home/screens/chat_screen.dart';
+import 'package:ai_movie_recommendation_app/features/chat/screens/chat_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

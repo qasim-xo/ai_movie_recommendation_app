@@ -3,6 +3,14 @@ import 'package:ai_movie_recommendation_app/model/content/content.dart';
 import 'package:dio/dio.dart';
 
 class ChatRepo {
+  static final ChatRepo _chatRepo = ChatRepo._internal();
+
+  factory ChatRepo() {
+    return _chatRepo;
+  }
+
+  ChatRepo._internal();
+
   Future<String> generateText(List<Content> messages) async {
     final dio = Dio(BaseOptions(
       validateStatus: (status) {
