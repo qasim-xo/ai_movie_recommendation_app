@@ -36,6 +36,7 @@ A Flutter-based movie recommendation chat application that suggests movies based
 - **Riverpod** - State management
 - **Gemini API** - Movie recommendations
 - **Freezed** - Model classes generation
+- **Dio** - For API Integration 
 
 ## 🏗️ Architecture
 
