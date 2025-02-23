@@ -34,7 +34,9 @@ class ChatNotifier extends Notifier<ChatState> {
 
     state = state.copyWith(messages: [...state.messages, chatModel]);
 
-    final response = await ChatRepo().generateText(state.messages);
+    ChatRepo chatService = ChatRepo.instance;
+
+    final response = await chatService.generateText(state.messages);
 
     if (response.isNotEmpty) {
       state = state.copyWith(messages: [

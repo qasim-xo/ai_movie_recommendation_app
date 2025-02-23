@@ -9,17 +9,23 @@ class ChatRepo {
     return _chatRepo;
   }
 
-  ChatRepo._internal();
+  static ChatRepo get instance => _chatRepo;
 
-  Future<String> generateText(List<Content> messages) async {
-    final dio = Dio(BaseOptions(
+  ChatRepo._internal();
+  late Dio _dio;
+
+  void configureDio(String baseUrl) {
+    _dio = Dio(BaseOptions(
+      baseUrl: baseUrl,
       validateStatus: (status) {
         return status! < 500;
       },
     ));
+  }
 
+  Future<String> generateText(List<Content> messages) async {
     try {
-      final response = await dio.post(
+      final response = await _dio.post(
         '$url?key=$apiKey',
         data: {
           "contents": [
