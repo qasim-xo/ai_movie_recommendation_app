@@ -44,6 +44,10 @@ This project follows the **MVVM (Model-View-ViewModel)** architecture:
 - **View:** UI components displaying data to users.
 - **ViewModel:** Acts as a bridge between the model and view, handling logic and state management using Riverpod.
 
+## Screenshot
+![image](https://github.com/user-attachments/assets/7d7dfd30-e4f7-4395-bcaf-9e93f1d3449c)
+
+
 ## 📦 Installation
 
 1. **Clone the repository:**
