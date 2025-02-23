@@ -29,12 +29,13 @@ A Flutter-based movie recommendation chat application that suggests movies based
 - Singleton pattern for optimized performance.
 - Modular and reusable components.
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Packages
 
 - **Flutter** - Frontend framework
 - **Dart** - Programming language
 - **Riverpod** - State management
 - **Gemini API** - Movie recommendations
+- **Freezed** - Model classes generation
 
 ## 🏗️ Architecture
 
